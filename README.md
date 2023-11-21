@@ -10,4 +10,6 @@ Currently, the only mining pool that supports scrypt-NAH that I am aware of is m
 Mining pools have to modify their stratum server code to support scrypt-NAH.  The pool at larahelpers.com (despite saying scrypt) actually tests for scrypt-NAH hashes.
 
 Point your miner there with:
+```
 cpuminer.exe -a scrypt -u <your wallet address> --hash-meter -o stratum+tcp://pool.larahelpers.com:3433 -p c=NAH
+```
